@@ -7,46 +7,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <header>
+      <h1>Free Wifi Espiritual</h1>
+      <div class="school-logo-placeholder">
+        <img src="logo.png" alt="Patio Digital">
+      </div>
+    </header>
 
-  <!-- Header -->
-  <header class="header-container">
-    <h1 class="page-title">Free Wifi Espiritual</h1>
-    <div class="school-logo-placeholder">
-      <img src="logo.png" alt="Logo Wifi" id="logo">
-    </div>
-  </header>
+    <section class="input-section">
+      <input type="text" id="userInput" placeholder="Tu nombre...">
+      <textarea id="commentInput" placeholder="Escribe un mensaje..."></textarea>
+      <button id="publishBtn">Publicar</button>
+    </section>
 
-  <!-- Formulario -->
-  <div class="form-container">
-    <input type="text" id="userInput" placeholder="Tu nombre..." required class="input-name">
-    <textarea id="commentInput" placeholder="Escribe un mensaje..." required class="input-comment" rows="2"></textarea>
-    <button type="button" id="publishBtn">Publicar</button>
-  </div>
-
-  <!-- Layout Principal -->
-  <div class="main-layout">
-    
-    <!-- LADO IZQUIERDO -->
-    <div class="left-section">
-      <div class="wifi-container">
-        <div class="wifi-symbol">
+    <main class="layout-grid">
+      <aside class="left-column">
+        <div class="wifi-container">
           <div class="bar bar-3"></div>
           <div class="bar bar-2"></div>
           <div class="bar bar-1"></div>
           <div class="dot"></div>
         </div>
-      </div>
+        <p id="statusMessage">Conectando ...</p>
+        <img id="caricaturaWifi" src="cariWifi1.png" alt="Caricatura1">
+      </aside>
 
-      <h2 id="statusMessage" class="status-message">Conectando ...</h2>
-      <!-- Espacio para la imagen caricatura wifi debajo del Wi-Fi -->
-      <div class="caricaturaWifi-container">
-        <img id="caricaturaWifi" src="cariWifi1.png" alt="Imagen caricatura 1" class="caricaturaWifi">
-      </div>
-    </div>
-
-    <!-- LADO DERECHO: Muro -->
-    <div id="wall" class="wall-section"></div>
-
+      <section class="wall-container">
+        <div id="wall" class="wall"></div>
+      </section>
+    </main>
   </div>
 
   <script type="module" src="app.js"></script>
