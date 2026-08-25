@@ -132,9 +132,9 @@ button#publishBtn {
 }
 
 /* Medidas proporcionales para encajar perfecto */
-.bar-1 { width: 64px; height: 18px; }
-.bar-2 { width: 92px; height: 32px; }
-.bar-3 { width: 120px; height: 46px; }
+.bar-1 { width: 32px; height: 32px; }
+.bar-2 { width: 64px; height: 46px; }
+.bar-3 { width: 92px; height: 60px; }
 
 /* Estado Conectado con resplandor glow */
 .dot.active {
