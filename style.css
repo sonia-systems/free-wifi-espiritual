@@ -35,9 +35,11 @@ h1 {
   font-weight: 800;
 }
 
-.logo-patio {
+.logo {
   width: 90px;
+  max-width: 90px;
   height: auto;
+  object-fit: contain;
 }
 
 /* --- SECCIÓN DE ENTRADA / FORMULARIO --- */
