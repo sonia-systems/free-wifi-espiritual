@@ -102,38 +102,39 @@ button#publishBtn {
   box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
 
-/* LOGO DE WI-FI (Más pequeño) */
+/* LOGO DE WI-FI (Barras juntas y compactas) */
 .wifi-container {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  gap: 8px;
-  margin-bottom: 10px;
-  height: 150px; /* Reducida la altura del contenedor */
-  justify-content: flex-end;
+  gap: 2px !important; /* Espacio mínimo entre arcos */
+  margin-bottom: 5px;
+  height: auto !important; /* Elimina la altura forzada */
+  padding: 5px 0;
 }
 
 .dot {
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   background-color: #f7a8b8;
   border-radius: 50%;
-  box-shadow: 0 0 8px rgba(247, 168, 184, 0.6);
+  box-shadow: 0 0 6px rgba(247, 168, 184, 0.6);
+  margin-top: 2px;
   transition: all 0.4s ease;
 }
 
 .bar {
-  border: 5px solid #f7a8b8;
+  border: 4px solid #f7a8b8;
   border-bottom: none;
   border-radius: 100px 100px 0 0;
-  filter: drop-shadow(0px 2px 4px rgba(247, 168, 184, 0.4));
+  filter: drop-shadow(0px 1px 3px rgba(247, 168, 184, 0.4));
   transition: all 0.4s ease;
 }
 
-/* Tamaños más pequeños para los arcos del Wi-Fi */
-.bar-1 { width: 50px; height: 25px; }
-.bar-2 { width: 85px; height: 42px; }
-.bar-3 { width: 120px; height: 60px; }
+/* Medidas proporcionales para encajar perfecto */
+.bar-1 { width: 36px; height: 18px; }
+.bar-2 { width: 64px; height: 32px; }
+.bar-3 { width: 92px; height: 46px; }
 
 /* Estado Conectado con resplandor glow */
 .dot.active {
