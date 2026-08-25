@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Wifi Espiritual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header-container">
+    <h1 class="page-title">Free Wifi Espiritual</h1>
+    <div class="school-logo-placeholder">
+      <img src="logo.png" alt="Logo Wifi" id="logo">
+    </div>
+  </header>
+
+  <!-- Formulario -->
+  <div class="form-container">
+    <input type="text" id="userInput" placeholder="Tu nombre..." required class="input-name">
+    <textarea id="commentInput" placeholder="Escribe un mensaje..." required class="input-comment" rows="2"></textarea>
+    <button type="button" id="publishBtn">Publicar</button>
+  </div>
+
+  <!-- Layout Principal -->
+  <div class="main-layout">
+    
+    <!-- LADO IZQUIERDO -->
+    <div class="left-section">
+      <div class="wifi-container">
+        <div class="wifi-symbol">
+          <div class="bar bar-3"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-1"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <h2 id="statusMessage" class="status-message">Conectando ...</h2>
+      <!-- Espacio para la imagen caricatura wifi debajo del Wi-Fi -->
+      <div class="caricaturaWifi-container">
+        <img id="caricaturaWifi" src="cariWifi1.png" alt="Imagen caricatura 1" class="caricaturaWifi">
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: Muro -->
+    <div id="wall" class="wall-section"></div>
+
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
