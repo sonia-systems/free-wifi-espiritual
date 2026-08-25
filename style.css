@@ -35,11 +35,14 @@ h1 {
   font-weight: 800;
 }
 
-.logo {
-  width: 90px;
-  max-width: 90px;
-  height: auto;
-  object-fit: contain;
+.school-logo-placeholder,
+.school-logo-placeholder img,
+img[src*="logo.png"] {
+  width: 90px !important;
+  max-width: 90px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block;
 }
 
 /* --- SECCIÓN DE ENTRADA / FORMULARIO --- */
