@@ -9,12 +9,12 @@ body {
   background-color: #fdf5f8;
   color: #333;
   padding: 25px;
-  min-width: 1100px !important;
+  min-width: 1400px !important; /* Espacio extendido para 5 post-its */
   overflow-x: auto;
 }
 
 .container {
-  width: 1040px !important;
+  width: 1350px !important;
   margin: 0 auto !important;
 }
 
@@ -102,10 +102,10 @@ button#publishBtn {
   box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
 
-/* WI-FI ICON (Corregido: Orientación normal) */
+/* WI-FI ICON (Rosa pastel con sombra -> Morado activo) */
 .wifi-container {
   display: flex !important;
-  flex-direction: column !important; /* Arcos arriba, punto abajo */
+  flex-direction: column !important;
   align-items: center !important;
   gap: 10px;
   margin-bottom: 15px;
@@ -113,25 +113,38 @@ button#publishBtn {
   justify-content: flex-end;
 }
 
+/* Estado normal: Rosa pastel + sombra sutil */
 .dot {
   width: 24px;
   height: 24px;
-  background-color: #e0e0e0;
+  background-color: #f7a8b8;
   border-radius: 50%;
+  box-shadow: 0 0 8px rgba(247, 168, 184, 0.6);
+  transition: all 0.4s ease;
 }
 
 .bar {
-  border: 6px solid #e0e0e0;
+  border: 6px solid #f7a8b8;
   border-bottom: none;
   border-radius: 100px 100px 0 0;
+  filter: drop-shadow(0px 2px 4px rgba(247, 168, 184, 0.4));
+  transition: all 0.4s ease;
 }
 
 .bar-1 { width: 70px; height: 35px; }
 .bar-2 { width: 120px; height: 60px; }
 .bar-3 { width: 170px; height: 85px; }
 
-.dot.active { background-color: #a842ee; box-shadow: 0 0 12px #a842ee; }
-.bar-1.active, .bar-2.active, .bar-3.active { border-color: #a842ee; }
+/* Estado Conectado: Morado vibrante + resplandor glow */
+.dot.active {
+  background-color: #a842ee !important;
+  box-shadow: 0 0 16px #a842ee, 0 0 30px rgba(168, 66, 238, 0.6) !important;
+}
+
+.bar-1.active, .bar-2.active, .bar-3.active {
+  border-color: #a842ee !important;
+  filter: drop-shadow(0 0 8px #a842ee) drop-shadow(0 0 18px rgba(168, 66, 238, 0.5)) !important;
+}
 
 #statusMessage {
   font-size: 22px;
@@ -143,7 +156,6 @@ button#publishBtn {
 
 #statusMessage.connected { color: #8b2fc9; }
 
-/* IMAGEN DE LA CHICA (Aumentada a 240px) */
 #caricaturaWifi {
   width: 240px !important;
   max-width: 100% !important;
@@ -152,7 +164,7 @@ button#publishBtn {
   margin-top: 10px;
 }
 
-/* COLUMNA DERECHA (MURO) */
+/* COLUMNA DERECHA (MURO CON 5 COLUMNAS DE POST-ITS) */
 .wall-container {
   flex: 1;
   background: rgba(255, 255, 255, 0.5);
@@ -164,23 +176,24 @@ button#publishBtn {
 .wall {
   display: flex !important;
   flex-wrap: wrap !important;
-  gap: 20px !important;
+  gap: 15px !important;
 }
 
+/* Post-it ajustado a 180px para que entren 5 por fila exactos */
 .card {
-  width: 200px !important;
+  width: 180px !important;
   min-height: 150px;
-  padding: 18px;
+  padding: 15px;
   border-radius: 12px;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.08);
   word-wrap: break-word;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
-.card strong { color: #721c8a; font-size: 16px; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 5px; }
-.card p { color: #444; font-size: 14px; line-height: 1.4; }
+.card strong { color: #721c8a; font-size: 15px; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 5px; }
+.card p { color: #444; font-size: 13px; line-height: 1.4; }
 
 .card-color-1 { background-color: #ffe4f2; }
 .card-color-2 { background-color: #ebd9fc; }
