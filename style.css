@@ -8,13 +8,12 @@
 body {
   background-color: #fdf5f8;
   color: #333;
-  padding: 20px;
-  min-width: 1080px !important;
+  padding: 25px;
+  min-width: 1100px !important;
   overflow-x: auto;
 }
 
-.container,
-.main-content {
+.container {
   width: 1040px !important;
   margin: 0 auto !important;
 }
@@ -25,7 +24,6 @@ header {
   justify-content: space-between !important;
   align-items: center !important;
   margin-bottom: 25px;
-  width: 100% !important;
 }
 
 h1 {
@@ -34,24 +32,19 @@ h1 {
   font-weight: 800;
 }
 
-/* Logo esquina superior derecha */
-.school-logo-placeholder,
-.school-logo-placeholder img,
-img[src*="logo.png"] {
+.school-logo-placeholder img {
   width: 90px !important;
-  max-width: 90px !important;
   height: auto !important;
-  object-fit: contain !important;
+  display: block;
 }
 
-/* --- FORMULARIO DE ENTRADA --- */
+/* --- FORMULARIO --- */
 .input-section {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   gap: 15px !important;
   margin-bottom: 30px;
-  width: 100% !important;
 }
 
 input[type="text"],
@@ -65,7 +58,7 @@ textarea {
 }
 
 #userInput {
-  width: 250px;
+  width: 240px;
 }
 
 #commentInput {
@@ -87,18 +80,17 @@ button#publishBtn {
   box-shadow: 0 4px 10px rgba(200, 80, 235, 0.3);
 }
 
-/* --- ESTRUCTURA PRINCIPAL DE 2 COLUMNAS --- */
+/* --- DISPOSICIÓN DE 2 COLUMNAS --- */
 .layout-grid {
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important;
   align-items: flex-start !important;
   gap: 25px !important;
-  width: 100%;
 }
 
-/* COLUMNA IZQUIERDA (WI-FI + CHICA) */
-.left-column, .school-section {
+/* COLUMNA IZQUIERDA */
+.left-column {
   width: 320px !important;
   background: white;
   border: 2px solid #f7c5e2;
@@ -110,13 +102,13 @@ button#publishBtn {
   box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
 
-.wifi-container, .wifi-status {
+.wifi-container {
   display: flex !important;
   flex-direction: column-reverse !important;
   align-items: center !important;
   gap: 10px;
-  margin-bottom: 15px;
-  height: 220px;
+  margin-bottom: 10px;
+  height: 200px;
   justify-content: flex-start;
 }
 
@@ -152,19 +144,17 @@ button#publishBtn {
 
 #caricaturaWifi {
   width: 140px !important;
-  max-width: 140px !important;
   height: auto !important;
-  margin-top: 10px;
   display: block;
 }
 
-/* COLUMNA DERECHA (POST-ITS) */
+/* COLUMNA DERECHA (MURO) */
 .wall-container {
   flex: 1;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
   padding: 20px;
-  min-height: 500px;
+  min-height: 480px;
 }
 
 .wall {
@@ -174,8 +164,8 @@ button#publishBtn {
 }
 
 .card {
-  width: 210px !important;
-  min-height: 160px;
+  width: 200px !important;
+  min-height: 150px;
   padding: 18px;
   border-radius: 12px;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.08);
